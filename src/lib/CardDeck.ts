@@ -1,7 +1,7 @@
 import Card from "./Card";
 
 class CardDeck {
-    cards: Card[];
+    cards: Card[]
 
     constructor() {
         this.cards = [];
