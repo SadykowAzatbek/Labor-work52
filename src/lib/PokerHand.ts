@@ -4,7 +4,7 @@ class PokerHand {
     cards: Card[];
 
     constructor(card: Card[]) {
-        this.cards = card
+        this.cards = card;
     }
 
     getOutcome() {
