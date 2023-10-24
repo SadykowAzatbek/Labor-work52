@@ -3,6 +3,7 @@ import PlayCard from "./playCard/playCard";
 import {useState} from "react";
 import CardDeck from "./lib/CardDeck";
 import Card from "./lib/Card";
+import PokerHand from './lib/PokerHand';
 
 function App() {
     const [cards, setCards] = useState<Card[]>([]);
@@ -12,6 +13,9 @@ function App() {
         const deckCard = deck.getCards(5);
         return setCards(deckCard);
     };
+
+    const pokHand = new PokerHand(cards);
+    console.log(pokHand.getOutcome());
 
     if (cards.length === 0) {
         return (
